@@ -1,0 +1,22 @@
+#contact ul {
+  list-style: none;
+  padding: 10vh 10vw;
+}
+
+#contact li a {
+  display: flex;
+  gap: 5vw;
+  padding-bottom: 5vh;
+  text-decoration: none;
+}
+
+#contact li svg {
+  height: 80px;
+  width: 80px;
+  display: inline;
+}
+
+#contact li span {
+  margin: auto 0;
+  font-size: 20pt;
+}
