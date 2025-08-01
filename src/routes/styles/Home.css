@@ -32,8 +32,9 @@
 #ctaButtons {
   flex: .2 .2 auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
+  gap: 5vw
 }
 
 #ctaButtons>a {
@@ -109,4 +110,11 @@
   to {
     transform: translateX(-5200px);
   }
+}
+
+#profilePic>img {
+  width: 720px;
+  height: 720px;
+  object-fit: cover;
+  overflow: hidden;
 }

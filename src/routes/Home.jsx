@@ -69,7 +69,9 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div id="profilePic"></div>
+        <div id="profilePic">
+          <img src="./profile.jpg" alt="Akash Khetan" />
+        </div>
       </div>
       <div id="skillsContainer">
         <div id="skills">

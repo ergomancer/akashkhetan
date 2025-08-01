@@ -77,10 +77,6 @@ export default function About() {
             "Skilled in designing normalized and scalable database schemas using PostgreSQL and Prisma — with an eye for query performance and relational integrity.",
           ],
           [
-            "State Management Patterns",
-            "Alongside Redux, I use modern patterns and tools like React Query and Zustand to manage local and async state effectively.",
-          ],
-          [
             "Performance Optimization",
             "I apply performance-first practices like code-splitting, lazy loading, memoization, and profiling to build fast, responsive front-ends.",
           ],
@@ -89,10 +85,6 @@ export default function About() {
           [
             "Testing & Debugging",
             "I apply Test Driven Development practices and use tools like Jest and Vitest to write reliable code and catch bugs early.",
-          ],
-          [
-            "Form Handling & Validation",
-            "I manage form flows using tools like React Hook Form and handle validations with Zod or Yup for both UX and safety.",
           ],
 
           // 🌐 UX & Accessibility
@@ -109,12 +101,6 @@ export default function About() {
           [
             "Collaboration & Workflow",
             "Comfortable using tools like Notion, Figma, and Slack. Whether async or in sync, I value clear communication and shared understanding.",
-          ],
-
-          // 🧩 Problem Solving & Learning
-          [
-            "Problem Solving & Algorithms",
-            "Regularly practice problem-solving through platforms like NeetCode — not just to prep for interviews, but to build sharper intuition.",
           ],
         ].map((entry) => {
           return {
