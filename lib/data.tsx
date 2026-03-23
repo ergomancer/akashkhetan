@@ -62,9 +62,6 @@ export const tech: TechData[] = [
 
   { tech: "git", level: 90 },
   { tech: "bash", level: 85 },
-
-  { tech: "latex", level: 85 },
-  { tech: "arduino", level: 80 },
 ];
 
 export const projects: ProjectData[] = [

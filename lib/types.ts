@@ -19,8 +19,6 @@ export type Tech =
   | "bash"
   | "jest"
   | "python"
-  | "latex"
-  | "arduino"
   | "fastapi"
   | "mongo";
 

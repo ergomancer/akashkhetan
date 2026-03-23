@@ -7,7 +7,9 @@ export default function Intro() {
       <h1 className="text-4xl md:text-5xl font-bold">
         <Link href="/">Akash Khetan.</Link>
       </h1>
-      <h2 className="text-2xl font-semibold">Fullstack Developer.</h2>
+      <h2 className="text-2xl font-semibold text-primary/90">
+        Fullstack Developer.
+      </h2>
       <h4 className="text-md">
         Physicist. <br />
         Quantum Computing Geek.

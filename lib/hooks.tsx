@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { sections } from "./data";
 
-const config = { root: null, rootMargin: "20% 0% 40% 0%", threshold: 0.5 };
+const config = { root: null, rootMargin: "-10% 0% -30% 0%", threshold: 0.5 };
 
 export function useActiveSection() {
   const [active, setActive] = useState(sections[0].name);

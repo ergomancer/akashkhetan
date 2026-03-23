@@ -1,11 +1,9 @@
 import {
-  SiArduino,
   SiExpress,
   SiFastapi,
   SiGit,
   SiGnubash,
   SiJest,
-  SiLatex,
   SiMongodb,
   SiNextdotjs,
   SiPostgresql,
@@ -18,7 +16,6 @@ import {
 } from "react-icons/si";
 import type { Tech } from "@/lib/types";
 import Link from "next/link";
-import { Button } from "./ui/button";
 
 export default function TechLogo({
   tech,
@@ -42,8 +39,6 @@ export default function TechLogo({
     jest: SiJest,
     git: SiGit,
     bash: SiGnubash,
-    latex: SiLatex,
-    arduino: SiArduino,
   };
   const Logo = Logos[tech];
 

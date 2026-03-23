@@ -16,7 +16,7 @@ import { LuScreenShare } from "react-icons/lu";
 
 export default function Projects() {
   return (
-    <section id="projects" role="projects" className="space-y-5">
+    <section id="projects" role="projects" className="space-y-5 scroll-mt-20">
       <h2 className="md:hidden text-3xl font-semibold sticky top-0 p-2 backdrop-blur-sm backdrop-brightness-100 backdrop-opacity-100 border-b">
         Projects
       </h2>

@@ -3,7 +3,7 @@ import { sections } from "@/lib/data";
 
 export default function Nav({ active }: { active: string }) {
   return (
-    <nav id="nav" role="nav" className="md:flex flex-col gap-5 hidden">
+    <nav id="nav" role="nav" className="md:flex flex-col gap-5 hidden text-lg">
       {sections.map((section) => {
         const name = section.name;
         return (
@@ -11,11 +11,11 @@ export default function Nav({ active }: { active: string }) {
             key={name}
             replace
             href={`#${name}`}
-            className={
+            className={`md:motion-safe:transition-[transform, color] md:motion-safe:duration-300 md:motion-safe:ease-in md:motion-safe:will-change-[transform, color] ${
               active == name
-                ? "text-xl font-semibold px-10 py-2 text-primary/90"
-                : "text-muted-foreground/90 text-lg"
-            }
+                ? "text-primary/90 md:motion-safe:translate-x-15 md:motion-safe:scale-115"
+                : "text-muted-foreground/90 md:motion-safe:translate-x-0 md:motion-safe:scale-100"
+            }`}
           >
             {name}
           </Link>

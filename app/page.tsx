@@ -4,7 +4,7 @@ import Intro from "@/components/intro";
 import Contact from "@/components/contact";
 import { sections } from "@/lib/data";
 import Nav from "@/components/nav";
-import { useActiveSection } from "@/lib/hook";
+import { useActiveSection } from "@/lib/hooks";
 
 export default function Home() {
   const { active, ref } = useActiveSection();
