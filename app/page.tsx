@@ -19,11 +19,11 @@ export default function Home() {
       </div>
       <div
         ref={ref}
-        className="justify-self-start max-w-2xl py-10 md:py-20 space-y-25 md:space-y-40"
+        className="justify-self-start max-w-2xl py-10 md:py-20 space-y-20"
       >
         {sections.map((section) => {
           const Section = section.Component;
-          return <Section key={section.name} />;
+          return <Section key={section.name} active={active} />;
         })}
       </div>
     </main>
