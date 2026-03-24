@@ -14,7 +14,6 @@ export function useActiveSection() {
         .filter((e) => e.isIntersecting)
         .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
       if (activeSection) {
-        console.log("Active: ", activeSection.target.id);
         setActive(activeSection.target.id);
       }
     }, config);
