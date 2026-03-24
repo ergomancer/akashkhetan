@@ -1,5 +1,22 @@
 import type { ContactData, ProjectData, SectionData, TechData } from "./types";
-import { SiGithub, SiX } from "react-icons/si";
+import {
+  SiExpress,
+  SiFastapi,
+  SiGit,
+  SiGithub,
+  SiGnubash,
+  SiJest,
+  SiMongodb,
+  SiNextdotjs,
+  SiPostgresql,
+  SiPrisma,
+  SiPython,
+  SiReact,
+  SiShadcnui,
+  SiTailwindcss,
+  SiTypescript,
+  SiX,
+} from "react-icons/si";
 import About from "@/components/about";
 import Skills from "@/components/skills";
 import Projects from "@/components/projects";
@@ -42,26 +59,26 @@ export const contacts: ContactData[] = [
 ];
 
 export const tech: TechData[] = [
-  { tech: "ts", level: 90 },
-  { tech: "react", level: 90 },
+  { tech: "TypeScript", level: 90, Logo: SiTypescript },
+  { tech: "React", level: 90, Logo: SiReact },
 
-  { tech: "tailwind", level: 90 },
-  { tech: "shadcn", level: 95 },
+  { tech: "TailwindCSS", level: 90, Logo: SiTailwindcss },
+  { tech: "shadcn/ui", level: 95, Logo: SiShadcnui },
 
-  { tech: "jest", level: 85 },
-  { tech: "next", level: 85 },
+  { tech: "Jest", level: 85, Logo: SiJest },
+  { tech: "Next.js", level: 85, Logo: SiNextdotjs },
 
-  { tech: "express", level: 85 },
-  { tech: "prisma", level: 85 },
+  { tech: "Express", level: 85, Logo: SiExpress },
+  { tech: "Prisma", level: 85, Logo: SiPrisma },
 
-  { tech: "postgres", level: 80 },
-  { tech: "mongo", level: 50 },
+  { tech: "PostgreSQL", level: 80, Logo: SiPostgresql },
+  { tech: "MongoDB", level: 50, Logo: SiMongodb },
 
-  { tech: "python", level: 85 },
-  { tech: "fastapi", level: 75 },
+  { tech: "Python", level: 85, Logo: SiPython },
+  { tech: "FastAPI", level: 75, Logo: SiFastapi },
 
-  { tech: "git", level: 90 },
-  { tech: "bash", level: 85 },
+  { tech: "Git", level: 90, Logo: SiGit },
+  { tech: "Bash", level: 85, Logo: SiGnubash },
 ];
 
 export const projects: ProjectData[] = [
@@ -71,14 +88,14 @@ export const projects: ProjectData[] = [
     repo: githubProfile + "/whisper",
     deploy: "https://whisper-by-ergomancer.vercel.app",
     tech: [
-      "ts",
-      "react",
-      "tailwind",
-      "shadcn",
-      "next",
-      "express",
-      "postgres",
-      "prisma",
+      "TypeScript",
+      "React",
+      "TailwindCSS",
+      "shadcn/ui",
+      "Next.js",
+      "Express",
+      "PostgreSQL",
+      "Prisma",
     ],
   },
   {
@@ -86,13 +103,21 @@ export const projects: ProjectData[] = [
     description: "A fullstack task management app",
     repo: githubProfile + "/diddit",
     deploy: "https://didditbyergomancer.vercel.app",
-    tech: ["ts", "react", "tailwind", "shadcn", "next", "express", "postgres"],
+    tech: [
+      "TypeScript",
+      "React",
+      "TailwindCSS",
+      "shadcn/ui",
+      "Next.js",
+      "Express",
+      "PostgreSQL",
+    ],
   },
   {
     name: "portfolio",
     description: "This portfolio site",
     repo: githubProfile + "/akashkhetan",
     deploy: "https://akashkhetan.vercel.app",
-    tech: ["ts", "react", "tailwind", "shadcn", "next"],
+    tech: ["TypeScript", "React", "TailwindCSS", "shadcn/ui", "Next.js"],
   },
 ];
