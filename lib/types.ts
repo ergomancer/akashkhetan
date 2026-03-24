@@ -3,26 +3,26 @@ import type { IconType } from "react-icons";
 
 export type SectionData = {
   name: string;
-  Component: FunctionComponent;
+  Component: FunctionComponent<{ active: string }>;
 };
 
 export type Tech =
-  | "ts"
-  | "react"
-  | "tailwind"
-  | "shadcn"
-  | "next"
-  | "express"
-  | "prisma"
-  | "postgres"
-  | "git"
-  | "bash"
-  | "jest"
-  | "python"
-  | "fastapi"
-  | "mongo";
+  | "TypeScript"
+  | "React"
+  | "TailwindCSS"
+  | "shadcn/ui"
+  | "Next.js"
+  | "Express"
+  | "Prisma"
+  | "PostgreSQL"
+  | "Git"
+  | "Bash"
+  | "Jest"
+  | "Python"
+  | "FastAPI"
+  | "MongoDB";
 
-export type TechData = { tech: Tech; level: number };
+export type TechData = { tech: Tech; level: number; Logo: IconType };
 
 export type ProjectData = {
   name: string;
