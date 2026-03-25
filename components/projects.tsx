@@ -1,6 +1,5 @@
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
   CardFooter,
@@ -31,12 +30,12 @@ export default function Projects() {
                 {project.description}
               </CardDescription>
             </CardHeader>
-            <CardContent className="grid gap-3">
+            <CardContent className="space-y-3">
               {project.list}
-              <CardAction className="flex flex-col gap-3 items-stretch">
+              <div className="flex gap-3 justify-start">
                 <Button
                   variant={"outline"}
-                  className="md:hover:bg-primary md:hover:text-background"
+                  className="bg-primary text-background"
                 >
                   <Link href={project.repo} className="flex gap-2">
                     <SiGithub className="size-4 md:size-6" />
@@ -45,14 +44,14 @@ export default function Projects() {
                 </Button>
                 <Button
                   variant={"outline"}
-                  className="md:hover:bg-primary md:hover:text-background"
+                  className="bg-primary text-background"
                 >
                   <Link href={project.deploy} className="flex gap-2">
                     <LuScreenShare className="size-4 md:size-6" />
                     <span>Live Demo</span>
                   </Link>
                 </Button>
-              </CardAction>
+              </div>
             </CardContent>
             <CardFooter className="flex gap-2 border-t">
               {project.tech.map((tech) => (
