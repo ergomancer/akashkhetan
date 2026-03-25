@@ -10,13 +10,10 @@ export default function Intro() {
       <h2 className="text-2xl font-semibold text-primary/90">
         Fullstack Developer.
       </h2>
-      <h4 className="text-md">
-        Physicist. <br />
-        Quantum Computing Geek.
-      </h4>
       <h3 className="text-xl">
-        I build modular, API-first systems that scale. <br /> In code and in
-        thought.
+        With an emphasis on clean backend design, data modeling, and real-world
+        usability, I build modular, API-first systems that scale.
+        <br /> In code and in thought.
       </h3>
     </section>
   );

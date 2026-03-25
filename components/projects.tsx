@@ -23,23 +23,30 @@ export default function Projects() {
       <div className="px-5 space-y-10">
         {projects.map((project) => (
           <Card key={project.name}>
-            <CardHeader>
-              <CardTitle className="font-bold text-xl md:text:2xl">
+            <CardHeader className="border-b">
+              <CardTitle className="font-bold text-xl md:text-2xl">
                 {project.name.charAt(0).toUpperCase() + project.name.slice(1)}
               </CardTitle>
-            </CardHeader>
-            <CardContent className="flex flex-col gap-5">
-              <CardDescription className="font-semibold text-lg md:text-xl">
+              <CardDescription className=" text-md md:text-lg">
                 {project.description}
               </CardDescription>
-              <CardAction className="space-x-2">
-                <Button variant={"outline"}>
+            </CardHeader>
+            <CardContent className="grid gap-3">
+              {project.list}
+              <CardAction className="flex flex-col gap-3 items-stretch">
+                <Button
+                  variant={"outline"}
+                  className="md:hover:bg-primary md:hover:text-background"
+                >
                   <Link href={project.repo} className="flex gap-2">
                     <SiGithub className="size-4 md:size-6" />
                     <span>Github Repo</span>
                   </Link>
                 </Button>
-                <Button variant={"outline"}>
+                <Button
+                  variant={"outline"}
+                  className="md:hover:bg-primary md:hover:text-background"
+                >
                   <Link href={project.deploy} className="flex gap-2">
                     <LuScreenShare className="size-4 md:size-6" />
                     <span>Live Demo</span>
