@@ -1,16 +1,12 @@
 import type { ContactData, ProjectData, SectionData, TechData } from "./types";
 import {
   SiExpress,
-  SiFastapi,
   SiGit,
   SiGithub,
-  SiGnubash,
   SiJest,
-  SiMongodb,
   SiNextdotjs,
   SiPostgresql,
   SiPrisma,
-  SiPython,
   SiReact,
   SiShadcnui,
   SiTailwindcss,
@@ -65,20 +61,14 @@ export const tech: TechData[] = [
   { tech: "TailwindCSS", level: 90, Logo: SiTailwindcss },
   { tech: "shadcn/ui", level: 95, Logo: SiShadcnui },
 
-  { tech: "Jest", level: 85, Logo: SiJest },
   { tech: "Next.js", level: 85, Logo: SiNextdotjs },
-
   { tech: "Express", level: 85, Logo: SiExpress },
+
   { tech: "Prisma", level: 85, Logo: SiPrisma },
-
   { tech: "PostgreSQL", level: 80, Logo: SiPostgresql },
-  { tech: "MongoDB", level: 50, Logo: SiMongodb },
 
-  { tech: "Python", level: 85, Logo: SiPython },
-  { tech: "FastAPI", level: 75, Logo: SiFastapi },
-
+  { tech: "Jest", level: 85, Logo: SiJest },
   { tech: "Git", level: 90, Logo: SiGit },
-  { tech: "Bash", level: 85, Logo: SiGnubash },
 ];
 
 export const projects: ProjectData[] = [

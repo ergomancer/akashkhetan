@@ -16,11 +16,7 @@ export type Tech =
   | "Prisma"
   | "PostgreSQL"
   | "Git"
-  | "Bash"
-  | "Jest"
-  | "Python"
-  | "FastAPI"
-  | "MongoDB";
+  | "Jest";
 
 export type TechData = { tech: Tech; level: number; Logo: IconType };
 
